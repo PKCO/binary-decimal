@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objective - Binary and Decimal Conversion</title>
+    <link rel="stylesheet" href="objective.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <h1>Binary-Decimal Converter</h1>
+        <ul>
+          <li><a href="index.html">Concept</a></li>
+          <li><a href="#">Objective</a></li>
+          <li><a href="experiment.html">Experimentation</a></li>
+          <li><a href="caluclator.html">Calculator</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+
+    <!-- Objective Section -->
+    <section class="content-section">
+        <h1>Objective</h1>
+        <p>
+            The objective of this experiment is to help students understand the concepts behind converting numbers between decimal and binary number systems. 
+            By learning these conversion methods, students will gain insight into how data is represented in digital systems and computers.
+        </p>
+
+        <h2>Binary to Decimal Conversion</h2>
+        <p>
+            In binary, numbers are represented using only two digits: 0 and 1. 
+            To convert a binary number into a decimal number, follow these steps:
+        </p>
+        <ol>
+            <li>Write down the binary number.</li>
+            <li>Starting from the rightmost digit, multiply each binary digit by 2 raised to the power of its position index (starting from 0).</li>
+            <li>Add the results together to get the decimal equivalent.</li>
+        </ol>
+        <p><strong>Example:</strong> Convert binary <strong>1101</strong> to decimal.</p>
+        <ul>
+            <li>1 × 2³ = 8</li>
+            <li>1 × 2² = 4</li>
+            <li>0 × 2¹ = 0</li>
+            <li>1 × 2⁰ = 1</li>
+        </ul>
+        <p>Adding these up: 8 + 4 + 0 + 1 = <strong>13</strong> (in decimal).</p>
+
+        <h2>Decimal to Binary Conversion</h2>
+        <p>
+            To convert a decimal number into binary, follow these steps:
+        </p>
+        <ol>
+            <li>Divide the decimal number by 2.</li>
+            <li>Record the remainder (0 or 1).</li>
+            <li>Divide the quotient by 2 again and repeat the process until the quotient becomes 0.</li>
+            <li>Write down the remainders in reverse order to get the binary equivalent.</li>
+        </ol>
+        <p><strong>Example:</strong> Convert decimal <strong>13</strong> to binary.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Step</th>
+                    <th>Division</th>
+                    <th>Remainder</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>13 ÷ 2 = 6</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>6 ÷ 2 = 3</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>3 ÷ 2 = 1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>1 ÷ 2 = 0</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>So, the binary equivalent of decimal 13 is <strong>1101</strong>.</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Decimal-Binary Converter &copy; 2024</p>
+    </footer>
+</body>
+</html>

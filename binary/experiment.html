@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary, Decimal, Hexadecimal, and Octal Converter</title>
+    <link rel="stylesheet" href="experiment.css">
+</head>
+<body>
+    <nav>
+        <h1>Binary-Decimal Converter</h1>
+        <ul>
+          <li><a href="index.html">Concept</a></li>
+          <li><a href="objective.html">Objective</a></li>
+          <li><a href="#">Experimentation</a></li>
+          <li><a href="caluclator.html">Calculator</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    <div class="container">
+        <h1>Binary, Decimal, Hexadecimal & Octal Converter</h1>
+
+        <div class="converter">
+            <h2>Binary to Decimal, Hexadecimal & Octal</h2>
+            <input type="text" id="binaryInput" placeholder="Enter binary number" maxlength="8">
+            <button onclick="convertFromBinary()">Convert</button>
+            <p>Decimal Value: <span id="decimalOutput">0</span></p>
+            <p>Hexadecimal Value: <span id="hexadecimalOutput">0</span></p>
+            <p>Octal Value: <span id="octalOutput">0</span></p>
+        </div>
+
+        <div class="converter">
+            <h2>Decimal to Binary, Hexadecimal & Octal</h2>
+            <input type="number" id="decimalInput" placeholder="Enter decimal number" min="0">
+            <button onclick="convertFromDecimal()">Convert</button>
+            <p>Binary Value: <span id="binaryOutput">0</span></p>
+            <p>Hexadecimal Value: <span id="decimalToHexOutput">0</span></p>
+            <p>Octal Value: <span id="decimalToOctalOutput">0</span></p>
+        </div>
+
+        <div class="converter">
+            <h2>Hexadecimal to Binary, Decimal & Octal</h2>
+            <input type="text" id="hexadecimalInput" placeholder="Enter hexadecimal number">
+            <button onclick="convertFromHexadecimal()">Convert</button>
+            <p>Binary Value: <span id="hexToBinaryOutput">0</span></p>
+            <p>Decimal Value: <span id="hexToDecimalOutput">0</span></p>
+            <p>Octal Value: <span id="hexToOctalOutput">0</span></p>
+        </div>
+
+        <div class="converter">
+            <h2>Octal to Binary, Decimal & Hexadecimal</h2>
+            <input type="text" id="octalInput" placeholder="Enter octal number">
+            <button onclick="convertFromOctal()">Convert</button>
+            <p>Binary Value: <span id="octalToBinaryOutput">0</span></p>
+            <p>Decimal Value: <span id="octalToDecimalOutput">0</span></p>
+            <p>Hexadecimal Value: <span id="octalToHexOutput">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
